@@ -5,11 +5,12 @@ public class Aminationn : MonoBehaviour
     public Animator animator;
     public float speed = 2f;
     //public float rotationSpeed = 10f;
+    public GameObject colliderArma; // 
+    
     public float mouseSensitivity = 200f; // sensibilidad del mouse
 
     private CharacterController controller;
 
-    public GameObject colliderArma;
 
     void Awake()
     {
@@ -39,12 +40,12 @@ public class Aminationn : MonoBehaviour
         {
             animator.SetTrigger("Attack");
             colliderArma.SetActive(true);   //  daño
-            Invoke("DesactivarColliderArma", 0.4f); // ← se desactiva  0.4s 
+            //Invoke("DesactivarColliderArma", 0.4f); // ← se desactiva  0.4s 
         }
 
         if (isWalking)
         {
-            moveDir = moveDir.normalized;
+            //moveDir = moveDir.normalized;
 
             // Mover 
             controller.SimpleMove(moveDir * speed);

@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class DañoArma : MonoBehaviour
 {
-    public int daño = 20;
+    public int daño = 10;
 
     private void OnTriggerEnter(Collider other)
     {
