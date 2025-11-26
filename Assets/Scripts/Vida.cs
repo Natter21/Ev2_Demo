@@ -7,7 +7,7 @@ public class Vida : MonoBehaviour
     public void RecibirDaño(int daño)
     {
         vida -= daño;
-        Debug.Log(gameObject.name + " recibió daño. Vida actual: " + vida);
+        Debug.Log(gameObject.name + " Recibiendo daño. Vida actual: " + vida);
 
         if (vida <= 0)
         {
@@ -17,7 +17,7 @@ public class Vida : MonoBehaviour
 
     void Muerte()
     {
-        Debug.Log(gameObject.name + " ha muerto!");
+        Debug.Log(gameObject.name + " Dummy muerto!");
         gameObject.SetActive(false);
     }
 }
